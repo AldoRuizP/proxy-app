@@ -4,8 +4,8 @@ priority:5
 
 omega
 weight:1
-priority:5
+priority:1
 
 beta
 weight:5
-priority:1
+priority:2
