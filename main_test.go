@@ -44,9 +44,9 @@ func TestAlgorithm(t *testing.T) {
 	}{
 		{Domain: "alpha", Output: `["alpha"]`},
 		{Domain: "omega", Output: `["alpha","omega"]`},
-		{Domain: "beta", Output: `["alpha","omega","beta"]`},
-		{Domain: "omega", Output: `["alpha","omega","beta","omega"]`},
-		{Domain: "alpha", Output: `["alpha","alpha","omega","beta","omega"]`},
+		{Domain: "beta", Output: `["alpha","beta","omega"]`},
+		{Domain: "omega", Output: `["alpha","beta","omega","omega"]`},
+		{Domain: "alpha", Output: `["alpha","alpha","beta","omega","omega"]`},
 		{Domain: "", Output: `no domain received`},
 		{Domain: "someFakeDomain", Output: `domain not found`},
 	}
